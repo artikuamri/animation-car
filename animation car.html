@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .semecircle
+{
+    height: 100px;
+    width: 300px;
+   background-color: rgb(210, 19, 19);
+   border: 1px solid black;
+     border-top-left-radius: 50%;   
+     border-top-right-radius: 50%;
+     margin-left: 90px;
+     position: relative;
+}
+.rectangle
+{
+    height: 100px;
+    width: 500px;
+    background-color: rgb(210, 19, 19);
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+.window_left
+{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(209, 214, 214);
+    border: 2px solid black;
+    border-top-left-radius: 90%;
+    position: absolute;
+    position: relative;
+    top: 20px;
+    left: 75px;
+   
+    }
+    .window_right{
+        height: 80px;
+    width: 80px;
+    background-color: rgb(181, 191, 191);
+    border: 2px solid black;
+    border-top-right-radius: 90%;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+
+
+    }
+    .s_window
+    {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border: 1px solid black;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+    .sr_window
+    {
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border: 1px solid black;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: absolute;
+        top: 30px;
+        left: 22px;
+    }
+    .wheels
+    {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 70px;
+        transform: rotate(360deg);
+        animation-name: wheel2;
+        animation-duration: 15s;
+        animation-delay: 1s;
+
+    }
+    @keyframes wheel2
+    {
+        0%
+        { transform: rotate(0deg);
+
+        }
+        100%
+        {
+            transform: rotate(-3600deg);
+        }
+    }
+    .r_wheels
+    {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 300px;
+        transform: rotate(360deg);
+        animation-name: wheel1;
+        animation-duration: 15s;
+        animation-delay: 1s;
+
+    }
+    @keyframes wheel1
+    {
+        0%
+        { transform: rotate(0deg);
+
+        }
+        100%
+        {
+            transform: rotate(-3600deg);
+        }
+    }
+
+    .ring2
+    {
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border: 2px solid black;
+        border: dashed;
+        border-radius: 50%;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+    .ring1
+    {
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border: 2px solid black;
+        border: dashed;
+        border-radius: 50%;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+    }
+    .road
+    {
+        height: 80px;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 80%;
+        
+    }
+    .car
+    {
+        position: absolute;
+        bottom: 100px;
+        left: 1000px;   
+        animation-name: car1;
+        animation-duration: 10s;
+        animation-delay: 1s; 
+            }
+    @keyframes car1
+    {
+        0%
+        {
+            bottom: 100px;
+         left: 1000px;
+        }
+        100%
+        {
+            bottom: 100px;
+            left:-500px;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="road">
+        <div class="car">
+            <div class="semecircle">
+                <div class="window_left">
+                    <div class="s_window"></div>
+                </div>
+                <div class="window_right">
+                    <div class="sr_window"></div>
+    
+                </div>
+            </div>
+            <div class="rectangle">
+                <div class="wheels">
+                    <div class="ring1"></div>
+                </div>
+                <div class="r_wheels">
+                    <div class="ring2"></div>
+            </div>
+            </div>
+      
+        </div>
+    </div>
+</body>
+</html>
